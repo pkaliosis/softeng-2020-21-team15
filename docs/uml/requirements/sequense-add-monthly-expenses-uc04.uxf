@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>160</x>
-      <y>80</y>
-      <w>100</w>
-      <h>30</h>
+      <x>320</x>
+      <y>112</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>_:Administrator_</panel_attributes>
     <additional_attributes/>
@@ -15,33 +15,21 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
-      <y>100</y>
-      <w>30</w>
-      <h>480</h>
+      <x>352</x>
+      <y>128</y>
+      <w>24</w>
+      <h>384</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>110</x>
-      <y>120</y>
-      <w>160</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-addMonthlyΕxpenses()</panel_attributes>
-    <additional_attributes>100.0;20.0;50.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>200</x>
-      <y>140</y>
-      <w>20</w>
-      <h>400</h>
+      <x>352</x>
+      <y>160</y>
+      <w>16</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -49,10 +37,10 @@ addMonthlyΕxpenses()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>340</x>
-      <y>80</y>
-      <w>100</w>
-      <h>30</h>
+      <x>464</x>
+      <y>112</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>_:Building_</panel_attributes>
     <additional_attributes/>
@@ -60,10 +48,10 @@ addMonthlyΕxpenses()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>100</y>
-      <w>30</w>
-      <h>480</h>
+      <x>496</x>
+      <y>128</y>
+      <w>24</w>
+      <h>384</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
@@ -71,21 +59,21 @@ addMonthlyΕxpenses()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>520</x>
-      <y>80</y>
-      <w>100</w>
-      <h>30</h>
+      <x>608</x>
+      <y>112</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
-    <panel_attributes>System</panel_attributes>
+    <panel_attributes>_:Main_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>100</y>
-      <w>30</w>
-      <h>480</h>
+      <x>640</x>
+      <y>128</y>
+      <w>24</w>
+      <h>384</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
@@ -93,10 +81,10 @@ addMonthlyΕxpenses()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>380</x>
-      <y>150</y>
-      <w>20</w>
-      <h>120</h>
+      <x>496</x>
+      <y>160</y>
+      <w>16</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -104,46 +92,34 @@ addMonthlyΕxpenses()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>130</y>
-      <w>190</w>
-      <h>40</h>
+      <x>352</x>
+      <y>144</y>
+      <w>160</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-addExpenses()</panel_attributes>
-    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+insertMonthlyExpenses()</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>680</x>
-      <y>70</y>
-      <w>100</w>
-      <h>40</h>
+      <x>848</x>
+      <y>104</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Database&gt;&gt;
-Apartment Data</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>820</x>
-      <y>70</y>
-      <w>100</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Database&gt;&gt;
+    <panel_attributes>&lt;&lt;Local Memory&gt;&gt;
 Tenant Debts</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>100</y>
-      <w>30</w>
-      <h>480</h>
+      <x>880</x>
+      <y>128</y>
+      <w>24</w>
+      <h>384</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
@@ -151,68 +127,22 @@ Tenant Debts</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>860</x>
-      <y>100</y>
-      <w>30</w>
-      <h>480</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;460.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>390</x>
-      <y>140</y>
-      <w>350</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
-query apartment area</panel_attributes>
-    <additional_attributes>330.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>720</x>
-      <y>160</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>390</x>
-      <y>160</y>
-      <w>350</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-
-return data</panel_attributes>
-    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>390</x>
-      <y>190</y>
-      <w>210</w>
-      <h>70</h>
+      <x>504</x>
+      <y>200</y>
+      <w>208</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-countNewDebts()</panel_attributes>
+calculateMonthlyBalance()</panel_attributes>
     <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>250</y>
-      <w>190</w>
-      <h>30</h>
+      <x>504</x>
+      <y>248</y>
+      <w>152</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
@@ -220,10 +150,10 @@ countNewDebts()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>560</x>
-      <y>260</y>
-      <w>20</w>
-      <h>300</h>
+      <x>640</x>
+      <y>256</y>
+      <w>16</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -231,10 +161,10 @@ countNewDebts()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>270</y>
-      <w>370</w>
-      <h>40</h>
+      <x>360</x>
+      <y>264</y>
+      <w>296</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 ask confirmation</panel_attributes>
@@ -243,10 +173,10 @@ ask confirmation</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>320</y>
-      <w>370</w>
-      <h>40</h>
+      <x>360</x>
+      <y>304</y>
+      <w>296</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 confirm</panel_attributes>
@@ -255,10 +185,10 @@ confirm</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>90</x>
-      <y>310</y>
-      <w>990</w>
-      <h>200</h>
+      <x>264</x>
+      <y>296</y>
+      <w>792</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>opt
 confirm</panel_attributes>
@@ -267,10 +197,10 @@ confirm</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>860</x>
-      <y>340</y>
-      <w>20</w>
-      <h>30</h>
+      <x>880</x>
+      <y>320</y>
+      <w>16</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -278,10 +208,10 @@ confirm</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>330</y>
-      <w>310</w>
-      <h>40</h>
+      <x>648</x>
+      <y>312</y>
+      <w>248</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 update databse</panel_attributes>
@@ -290,115 +220,22 @@ update databse</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>350</y>
-      <w>310</w>
-      <h>40</h>
+      <x>648</x>
+      <y>328</y>
+      <w>248</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 return</panel_attributes>
     <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>940</x>
-      <y>390</y>
-      <w>100</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>_n :Notification_</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>370</y>
-      <w>390</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-create</panel_attributes>
-    <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>980</x>
-      <y>410</y>
-      <w>30</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>570</x>
-      <y>410</y>
-      <w>430</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-setTarget(tenants)</panel_attributes>
-    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>980</x>
-      <y>430</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>570</x>
-      <y>450</y>
-      <w>430</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-send()</panel_attributes>
-    <additional_attributes>410.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>570</x>
-      <y>430</y>
-      <w>430</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-return</panel_attributes>
-    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>570</x>
-      <y>470</y>
-      <w>430</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-return</panel_attributes>
-    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>210</x>
-      <y>480</y>
-      <w>370</w>
-      <h>40</h>
+      <x>360</x>
+      <y>384</y>
+      <w>296</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 print succesful message</panel_attributes>
@@ -407,13 +244,37 @@ print succesful message</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>520</y>
-      <w>370</w>
-      <h>40</h>
+      <x>360</x>
+      <y>464</y>
+      <w>296</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 return</panel_attributes>
     <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>160</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+return data</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>184</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+getTotalSquareArea()</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

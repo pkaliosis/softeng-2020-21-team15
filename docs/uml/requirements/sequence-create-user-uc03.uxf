@@ -113,7 +113,7 @@ generateID()</panel_attributes>
       <w>100</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>System</panel_attributes>
+    <panel_attributes>_:Main_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -189,7 +189,7 @@ setPassword()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>140</x>
-      <y>230</y>
+      <y>260</y>
       <w>220</w>
       <h>40</h>
     </coordinates>
@@ -213,18 +213,6 @@ create new user</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>140</x>
-      <y>280</y>
-      <w>220</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-setUserType()</panel_attributes>
-    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>140</x>
       <y>340</y>
       <w>440</w>
       <h>40</h>
@@ -241,7 +229,7 @@ print success message</panel_attributes>
       <w>110</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Database&gt;&gt;
+    <panel_attributes>&lt;&lt;Local Memory&gt;&gt;
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -265,7 +253,7 @@ print success message</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-update database</panel_attributes>
+update local memory</panel_attributes>
     <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
