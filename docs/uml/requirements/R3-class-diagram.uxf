@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>285</y>
+      <w>80</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>
+Admin
+--
+id: int
+username: String
+password: String
+address: String 
+floors: int 
+num_flats: int 
+heating: String 
+elevator: boolean 
+users: ArrayList&lt;User&gt; 
+st: Stack&lt;Notification&gt; 
+myBuilding: Building 
+monthly_cost: double 
+monthlyCosts: HashMap&lt;Integer, Double&gt; 
+--
+initBuilding():void
+addUser():void
+addFlat():void
+sendNotification():void
+updateMonthlyBalance():void
+submitNonRegExpenses():void
+initApartments(): void
+initRenter(): void
+signIn():void
+check(String us, String pa): boolean
+showUsersBalances(): void
+insertMonthlyExpenses(): void
+managePayment(int uid): void
+updateHeatingPercentage(): void
+createNotification(): void
+createBalanceNotification(HashMap&lt;Integer, Double&gt; hashcost): void
+showNotifications(Stack&lt;Notification&gt; s): void
+editUsersUsername(int id): void
+editUsersId(int id): void
+editUsersPassword(int id): void
+deleteUser(int id): void
+
++getters(), setters()
+
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>485</y>
+      <w>185</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>
+Owner
+--
+nonRegExpenses: ArrayList&lt;NonRegExpense&gt;
+--
+evaluateNonRegExpense(NonRegExpense nre): boolean
+showNonRegExpenses(): void
+submitResult(NonRegExpense nre): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>285</y>
+      <w>80</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>
+User
+--
+id: int
+username: String
+password: String
+flat_id: int
+balance: Balance
+flat: Flat
+payments: ArrayList&lt;Payment&gt;
+credentials: HashMap&lt;String, String&gt;
+--
+updateBalance(double amount): void
+showBalance(): void
+signIn(): void
+check(HashMap&lt;String, String&gt; credentials, String username, String password): boolean
+showNotifications(Stack&lt;Notification&gt; s): void
+changePassword(): void
+showUserInfo(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>485</y>
+      <w>145</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>
+Renter
+--
+flat: Flat
+--
+makePayment():Payment
+showPayments(ArrayList&lt;Payment&gt; p): void
+nonRegExpensesrequest(): NonRegExpense 
+getYourFlat(): Flat
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>805</x>
+      <y>425</y>
+      <w>55</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;60.0;10.0;60.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>895</x>
+      <y>425</y>
+      <w>55</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;90.0;60.0;90.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>115</x>
+      <y>285</y>
+      <w>340</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>
+Building
+--
+id: int
+address: String
+totalSquareArea: double
+floors: int
+monthlyElectricityCost: double 
+monthlyElevatorCost: double 
+cleaningCost: double 
+heatingCost: double 
+cost: double 
+sum: int 
+f: Flat 
+myFlats: ArrayList&lt;Flat&gt; 
+--
+hasElevator(): boolean
+calculateMonthlyBalance(double electricity, double elevator, double cleaning, double heating, Flat f): double
+addFlatsMonthlyBalance(Flat f, double cost): void
+addFlat(Flat f): void
+
++getters(), setters()
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>100</y>
+      <w>95</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>
+Payment
+--
+p_id: int
+date: String
+amount: double
+user_id: int
+type: PaymentType
+--
++getters()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>675</y>
+      <w>95</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>
+NonRegExpense
+--
+nid: int
+flat_id: int
+description: String
+time_expected: int
+cost: double
+--
+toString(): String
+
++getters()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>325</x>
+      <y>100</y>
+      <w>95</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>
+"enumeration" 
+PaymentType
+--
+PHYSICAL
+ONLINE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>705</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>
+Ειδοποιήσεις
+--
+n_id: int
+date: String
+description: String
+--
++getters()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>0</y>
+      <w>95</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>
+Flat
+--
+id: int
+userId: int
+floor: int
+area: double
+heating_percentage: double
+balance: Balance
+--
+updateAmount(double ua): void
+updateBalance(double am): void
+
++getters(), setters()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>95</y>
+      <w>95</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>
+Balance
+--
+b_id: int
+amount: double
+user_id: int
+flat_id: int
+--
++getters(), setters()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>635</x>
+      <y>105</y>
+      <w>250</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1
+αντιστοιχίζεται</panel_attributes>
+    <additional_attributes>10.0;10.0;480.0;360.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>165</y>
+      <w>240</w>
+      <h>345</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+m1=1..n
+m2=1
+πραγματοποιεί</panel_attributes>
+    <additional_attributes>10.0;10.0;460.0;670.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>320</y>
+      <w>315</w>
+      <h>395</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+
+βλέπει
+</panel_attributes>
+    <additional_attributes>10.0;770.0;600.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>785</x>
+      <y>550</y>
+      <w>105</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+κάνει αίτηση</panel_attributes>
+    <additional_attributes>180.0;250.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>550</y>
+      <w>75</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+αποκρίνεται</panel_attributes>
+    <additional_attributes>10.0;250.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>595</x>
+      <y>330</y>
+      <w>260</w>
+      <h>395</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+καταγράφει</panel_attributes>
+    <additional_attributes>490.0;770.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>775</x>
+      <y>155</y>
+      <w>60</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+αντιστοιχίζεται</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;660.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>595</x>
+      <y>305</y>
+      <w>255</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+αρχικοποιεί</panel_attributes>
+    <additional_attributes>490.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>315</y>
+      <w>80</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+αρχικοποιεί</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>525</x>
+      <y>595</y>
+      <w>45</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+καταχωρεί</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>595</x>
+      <y>95</y>
+      <w>180</w>
+      <h>215</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+καταχωρεί</panel_attributes>
+    <additional_attributes>330.0;10.0;10.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>170</y>
+      <w>70</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+επιβλέπει</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>575</x>
+      <y>105</y>
+      <w>50</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+αρχικοποιεί</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;360.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>145</y>
+      <w>250</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+αφαιρείται</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+</diagram>

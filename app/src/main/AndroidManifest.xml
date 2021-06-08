@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication.model">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name="com.example.myapplication.view.ShowBalanceActivity"></activity>
+        <activity android:name="com.example.myapplication.view.MakePaymentActivity" />
+        <activity android:name="com.example.myapplication.view.ShowNotificationsActivity" />
+        <activity android:name="com.example.myapplication.view.UserMainActivity" />
+        <activity android:name="com.example.myapplication.view.EditPaymentActivity" />
+        <activity android:name="com.example.myapplication.view.ManagePaymentsActivity" />
+        <activity android:name="com.example.myapplication.view.CreateMonthlyBalanceActivity" />
+        <activity android:name="com.example.myapplication.view.CreateNotificationActivity" />
+        <activity android:name="com.example.myapplication.view.AdminMainActivity" />
+        <activity android:name="com.example.myapplication.view.AddUserActivity" />
+        <activity android:name="com.example.myapplication.view.UsersInitActivity" />
+        <activity android:name="com.example.myapplication.view.ListDisplay" />
+        <activity android:name=".List_View" />
+        <activity android:name="com.example.myapplication.view.Activity_intialize_flat" />
+        <activity android:name="com.example.myapplication.view.AddFlatActivity" />
+        <activity android:name="com.example.myapplication.view.FlatInit" />
+        <activity android:name="com.example.myapplication.view.SignUpActivity" />
+        <activity android:name="com.example.myapplication.view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
